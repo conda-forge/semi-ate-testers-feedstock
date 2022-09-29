@@ -23,13 +23,14 @@ requirements:
     - semi-ate-plugins
     - pluggy
     - requests
+    - pydantic
   run:
     - python >=3.8
     - semi-ate-common
     - semi-ate-plugins
     - pluggy
     - requests
-
+    - pydantic
 test:
   imports:
     - semi_ate_testers
