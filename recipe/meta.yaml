@@ -1,5 +1,5 @@
 {% set name = "semi-ate-testers" %}
-{% set version = "1.0.15" %}
+{% set version = "1.0.17" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/semi-ate-testers-{{ version }}.tar.gz
-  sha256: 8da341b4ae6356078fac5d5512a7d2ccadf7c04ce0816435118997ca91c6be06
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 478cabbc7fc3f72dfff84d11ee98b63c5b1e1c7ec6ca9282e8f27333cdf1bb68
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
